@@ -149,7 +149,7 @@ export default function StatusCallback() {
             S
           </div>
           <span className="font-display font-bold text-2xl tracking-tight text-slate-900 dark:text-white">
-            Sunday
+            sunChat
           </span>
         </div>
 
@@ -180,7 +180,7 @@ export default function StatusCallback() {
 
         {/* Standard Info footer */}
         <div className="text-xs text-slate-400 dark:text-slate-500 flex gap-4 mt-8 relative z-10 pb-2">
-          <span>© 2026 Sunday Labs. All rights reserved.</span>
+          <span>© 2026 sunChat Labs. All rights reserved.</span>
         </div>
       </div>
 
@@ -201,7 +201,7 @@ export default function StatusCallback() {
                 Validating Security Token
               </h2>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-3 leading-relaxed">
-                Securing your terminal alignment with Sunday infrastructure gateways. Hold tight while we confirm parameters...
+                Securing your terminal alignment with sunChat infrastructure gateways. Hold tight while we confirm parameters...
               </p>
             </div>
           )}
@@ -219,7 +219,7 @@ export default function StatusCallback() {
                 Account Activated
               </h2>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-3 leading-relaxed">
-                Your parameters are securely registered. Preparing your collaborative Sunday workspace session now.
+                Your parameters are securely registered. Preparing your collaborative sunChat workspace session now.
               </p>
               <div className="mt-6 flex items-center justify-center gap-2 text-emerald-500 text-xs font-mono font-bold animate-pulse">
                 Redirecting to application panel
@@ -256,7 +256,7 @@ export default function StatusCallback() {
                     <input
                       id="resend-email"
                       type="email"
-                      placeholder="name@sunday.space"
+                      placeholder="name@sunChat.space"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       className="w-full text-xs pl-11 pr-4 py-3 rounded-xl border border-slate-200/70 dark:border-[#1E293B]/85 bg-slate-50/50 dark:bg-[#0B0F17] text-slate-800 dark:text-white placeholder-slate-400 dark:placeholder-slate-600 focus:border-[#FF6B35] dark:focus:border-[#FF6B35] transition-colors outline-none"

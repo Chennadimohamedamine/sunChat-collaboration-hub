@@ -37,7 +37,7 @@ const SlideOut: React.FC<SlideOutProps> = ({
 
             <div className="p-4 flex items-center justify-between">
                 <span className="text-xs font-bold text-slate-500 dark:text-zinc-400 font-mono tracking-wider">
-                    {profileDrawerTab === 'self' ? 'MY SUNDAY ACCOUNT' : 'PROPERTIES INSPECTOR'}
+                    {profileDrawerTab === 'self' ? 'MY sunChat ACCOUNT' : 'PROPERTIES INSPECTOR'}
                 </span>
                 <button
                     onClick={() => setIsProfileDrawerOpen(false)}

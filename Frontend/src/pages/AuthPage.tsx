@@ -146,12 +146,12 @@ export default function AuthPage({ config, setConfig }: AuthPageProps) {
           <div className="w-9 h-9 rounded-xl bg-[#FF6B35] flex items-center justify-center text-white font-display font-bold text-xl shadow-[0_4px_12px_rgba(255,107,53,0.3)] rotate-3">
             S
           </div>
-          <span className="font-display font-bold text-2xl tracking-tight text-slate-900 dark:text-white">Sunday</span>
+          <span className="font-display font-bold text-2xl tracking-tight text-slate-900 dark:text-white">sunChat</span>
         </div>
 
         <div className="my-auto py-12 md:py-0 relative z-10">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-semibold tracking-wider uppercase bg-[#FF6B35]/10 text-[#FF6B35] mb-6 border border-[#FF6B35]/20">
-            <Zap size={11} className="fill-current" /> Sunday Workspace
+            <Zap size={11} className="fill-current" /> sunChat Workspace
           </span>
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-display font-semibold text-slate-900 dark:text-white leading-tight tracking-tight mb-6 animate-fade-in">
             Instant.<br />Beautiful.<br />Accessible.
@@ -162,7 +162,7 @@ export default function AuthPage({ config, setConfig }: AuthPageProps) {
         </div>
 
         <div className="text-xs text-slate-400 dark:text-slate-500 flex gap-4 mt-8 relative z-10 pb-2">
-          <span>© 2026 Sunday Labs. All rights reserved.</span>
+          <span>© 2026 sunChat Labs. All rights reserved.</span>
         </div>
       </div>
 
@@ -238,8 +238,8 @@ export default function AuthPage({ config, setConfig }: AuthPageProps) {
                   </button>
                 )}
                 <h2 className="text-xl font-display font-semibold text-slate-900 dark:text-white">
-                  {authMode === 'signin' && 'Sign into Sunday'}
-                  {authMode === 'signup' && 'Get Sunday Handle'}
+                  {authMode === 'signin' && 'Sign into sunChat'}
+                  {authMode === 'signup' && 'Get sunChat Handle'}
                   {authMode === 'forgot_password' && 'Recover access criteria'}
                 </h2>
                 <p className="text-slate-500 dark:text-slate-400 text-xs mt-1 leading-relaxed">
@@ -302,7 +302,7 @@ export default function AuthPage({ config, setConfig }: AuthPageProps) {
                     <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1.5 pl-1">Workspace Email Address</label>
                     <div className="relative font-sans">
                       <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500"><Mail size={16} /></span>
-                      <input type="email" required disabled={isSubmitting} value={email} onChange={(e) => setEmail(e.target.value)} placeholder="name@sunday.space" className="w-full text-xs pl-11 pr-4 py-3 rounded-xl border border-slate-200/70 dark:border-[#1E293B]/85 bg-slate-50/50 dark:bg-[#0B0F17] text-slate-800 dark:text-white focus:border-[#FF6B35] transition-colors" />
+                      <input type="email" required disabled={isSubmitting} value={email} onChange={(e) => setEmail(e.target.value)} placeholder="name@sunChat.space" className="w-full text-xs pl-11 pr-4 py-3 rounded-xl border border-slate-200/70 dark:border-[#1E293B]/85 bg-slate-50/50 dark:bg-[#0B0F17] text-slate-800 dark:text-white focus:border-[#FF6B35] transition-colors" />
                     </div>
                   </div>
 
@@ -337,9 +337,9 @@ export default function AuthPage({ config, setConfig }: AuthPageProps) {
                     {isSubmitting ? (
                       <Loader2 size={16} className="animate-spin" />
                     ) : authMode === 'signin' ? (
-                      'Sign In to Sunday'
+                      'Sign In to sunChat'
                     ) : authMode === 'signup' ? (
-                      'Create Sunday Account'
+                      'Create sunChat Account'
                     ) : (
                       'Trigger Restoration Reset'
                     )}

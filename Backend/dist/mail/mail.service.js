@@ -66,21 +66,21 @@ let MailService = MailService_1 = class MailService {
     async sendVerificationEmail(email, token) {
         const verifyUrl = `${this.configService.get('APP_URL')}/api/auth/verify-email?token=${token}`;
         await this.transporter.sendMail({
-            from: `"Sunday Workspace" <${this.configService.get('EMAIL_USER')}>`,
+            from: `"sunChat Workspace" <${this.configService.get('EMAIL_USER')}>`,
             to: email,
-            subject: 'Verify your Sunday Account Parameters',
+            subject: 'Verify your sunChat Account Parameters',
             html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #F4F6F8; padding: 40px 20px; text-align: left;">
           <div style="max-width: 520px; margin: 0 auto; background-color: #ffffff; border-radius: 20px; border: 1px solid #E2E8F0; overflow: hidden; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.02);">
             <div style="background-color: #161B24; padding: 24px 32px; border-bottom: 2px solid #FF6B35;">
               <div style="display: inline-block; width: 32px; height: 32px; background-color: #FF6B35; border-radius: 8px; vertical-align: middle; margin-right: 12px;"></div>
-              <span style="color: #ffffff; font-weight: 700; font-size: 14px; letter-spacing: 1.5px; font-family: monospace; vertical-align: middle; text-transform: uppercase;">SUNDAY ACCOUNT UTILITIES</span>
+              <span style="color: #ffffff; font-weight: 700; font-size: 14px; letter-spacing: 1.5px; font-family: monospace; vertical-align: middle; text-transform: uppercase;">sunChat ACCOUNT UTILITIES</span>
             </div>
             
             <div style="padding: 36px 32px;">
               <h2 style="color: #0F131A; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; letter-spacing: -0.5px;">Verify your workspace node identity</h2>
               <p style="color: #64748B; font-size: 13px; line-height: 1.6; margin-bottom: 28px;">
-                Welcome to Sunday. To activate your account parameter options and begin syncing with system nodes and Sunday AI, verify this email address. This operational link expires in 24 hours.
+                Welcome to sunChat. To activate your account parameter options and begin syncing with system nodes and sunChat AI, verify this email address. This operational link expires in 24 hours.
               </p>
               
               <div style="margin-bottom: 32px; text-align: center;">
@@ -106,15 +106,15 @@ let MailService = MailService_1 = class MailService {
     async sendPasswordResetEmail(email, token) {
         const resetUrl = `${this.configService.get('APP_URL')}/api/auth/reset-password?token=${token}`;
         await this.transporter.sendMail({
-            from: `"Sunday Workspace" <${this.configService.get('EMAIL_USER')}>`,
+            from: `"sunChat Workspace" <${this.configService.get('EMAIL_USER')}>`,
             to: email,
-            subject: 'Reset your Sunday Account Security Key',
+            subject: 'Reset your sunChat Account Security Key',
             html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #F4F6F8; padding: 40px 20px; text-align: left;">
           <div style="max-width: 520px; margin: 0 auto; background-color: #ffffff; border-radius: 20px; border: 1px solid #E2E8F0; overflow: hidden; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.02);">
             <div style="background-color: #161B24; padding: 24px 32px; border-bottom: 2px solid #FF6B35;">
               <div style="display: inline-block; width: 32px; height: 32px; background-color: #FF6B35; border-radius: 8px; vertical-align: middle; margin-right: 12px;"></div>
-              <span style="color: #ffffff; font-weight: 700; font-size: 14px; letter-spacing: 1.5px; font-family: monospace; vertical-align: middle; text-transform: uppercase;">SUNDAY SYSTEM SECURITY</span>
+              <span style="color: #ffffff; font-weight: 700; font-size: 14px; letter-spacing: 1.5px; font-family: monospace; vertical-align: middle; text-transform: uppercase;">sunChat SYSTEM SECURITY</span>
             </div>
             
             <div style="padding: 36px 32px;">

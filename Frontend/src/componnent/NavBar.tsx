@@ -31,7 +31,7 @@ const NavBar: React.FC<NavBarProps> = ({
         <header className="h-16 px-6 bg-white dark:bg-[#161B24] border-b border-slate-200/60 dark:border-zinc-800/80 flex items-center justify-between z-10 select-none">
             <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-[#FF6B35] flex items-center justify-center text-white font-display font-bold text-lg shadow rotate-2 shadow-[#FF6B35]/20">S</div>
-                <span className="font-display font-semibold text-lg tracking-tight hidden sm:inline-block">Sunday</span>
+                <span className="font-display font-semibold text-lg tracking-tight hidden sm:inline-block">sunChat</span>
                 <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-slate-100 dark:bg-zinc-800 text-slate-500 dark:text-zinc-400 border border-slate-200/40 dark:border-zinc-800/50 hidden md:inline-block">v2.4-stable</span>
             </div>
 

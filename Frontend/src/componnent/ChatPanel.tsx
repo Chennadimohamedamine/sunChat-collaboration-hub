@@ -171,7 +171,7 @@ const ChatPanel: React.FC<ChatPanelProps> = ({
                                     }}
                                     placeholder={
                                         activeThread.peer.id === 'usr_ai'
-                                            ? 'Message Sunday AI...'
+                                            ? 'Message sunChat AI...'
                                             : `Reply to ${activeThread.peer.fullname || activeThread.peer.fullName}...`
                                     }
                                     className="w-full text-xs pl-4 pr-4 py-3 rounded-xl bg-[#F4F6F8] dark:bg-[#0F131A] text-[#0F172A] dark:text-white placeholder-slate-400 dark:placeholder-zinc-650 border border-transparent focus:border-[#FF6B35]/30 focus:outline-none transition-all resize-none"
@@ -194,7 +194,7 @@ const ChatPanel: React.FC<ChatPanelProps> = ({
                     </div>
                     <h3 className="text-lg font-display font-bold text-slate-800 dark:text-white mb-2">No conversation selected</h3>
                     <p className="text-slate-450 dark:text-zinc-500 text-xs max-w-xs leading-relaxed">
-                        Choose a thread from the sidebar to start interacting with nodes and Sunday AI.
+                        Choose a thread from the sidebar to start interacting with nodes and sunChat AI.
                     </p>
                 </div>
             )}
