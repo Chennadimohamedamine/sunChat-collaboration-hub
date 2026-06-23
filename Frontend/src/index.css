@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand: #FF6B35;
+  --color-brand-hover: #E55B24;
+  --color-brand-light: rgba(255, 107, 53, 0.15);
+  
+  --shadow-[#FF6B35]: 0 10px 25px -5px rgba(255, 107, 53, 0.25), 0 4px 10px -3px rgba(255, 107, 53, 0.15);
+  
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.15);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.12);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 107, 53, 0.3);
+}
+
+/* Base custom styles to eliminate default focus outlines with aesthetic focus styles */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+/* Accent glass styles */
+.backdrop-glass {
+  backdrop-filter: blur(16px);
+}
+
